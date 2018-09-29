@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="chart.css">
+</head>
+
+<body>
+	<div class="chart-box">
+		<div class="chart-box__header">
+			<b>小明</b>
+		</div>
+		<ul class="chart-box__main">
+			<li class="main__left">
+				<span class="main_avater"><img src="img/xiaoming.jpg" alt=""></span>
+				<span class="main_bg">今天天气真好</span>
+			</li>
+			<li class="main__right">
+				<span class="main_bg">我觉得也挺不错的</span>
+				<span class="main_avater"><img src="img/xiaolan.jpg" alt=""></span>
+			</li>
+		</ul>
+		<div class="chart-box__bottom">
+			<textarea name="" rows="10" cols="" class="chart_content"></textarea>
+			<button class="chart_send">发送</button>
+		</div>
+	</div>
+	<script src="chart.js"></script>
+	<script>
+		chart.init();
+		// 实现思路：
+		// 点击按钮， 或者按下crtl+enter触发事件
+		// 1. 获取输入的文本内容
+		// 2. 获取 .main__right的dom结构
+		// 3. 把获取结构里面的文本内容修改为输入的内容
+		// 4. 再把新元素放入到指定的位置
+		// 【注意】： 添加条数过多时，会有什么样的问题？
+	</script>
+</body>
+
+</html>
